@@ -1,0 +1,71 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def index():\n    return '<h1>Hello world</h1>'\ndata = [\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n    ]\n    #\n@app.route('/')",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def home():\n    # Simular a leitura da planilha de dados\n    # Retornar os dados como JSON\n    return render_template('index.html', data = data)\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = Flask(__name__, template_folder='')\nd = {\n    \"name\": \"Nikola\", \n    \"surname\": \"Tesla\", \n    \"idade\": 60\n      }\n@app.route('/index')\ndef index():\n    return '<h1>Hello world</h1>'\ndata = [",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "d = {\n    \"name\": \"Nikola\", \n    \"surname\": \"Tesla\", \n    \"idade\": 60\n      }\n@app.route('/index')\ndef index():\n    return '<h1>Hello world</h1>'\ndata = [\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "data = [\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n        {\"Number\": 1, \"Name\": \"Teste\", \"Age\": 22, \"City\": \"São Paulo\", \"Country\": \"Brazil\"},\n    ]\n    #\n@app.route('/')\ndef home():\n    # Simular a leitura da planilha de dados",
+        "detail": "main",
+        "documentation": {}
+    }
+]

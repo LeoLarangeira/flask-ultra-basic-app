@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha de Dados</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Planilha de Dados</h1>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.Number }}</td>
+            <td>{{ row.Name }}</td>
+            <td>{{ row.Age }}</td>
+            <td>{{ row.City }}</td>
+            <td>{{ row.Country }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
